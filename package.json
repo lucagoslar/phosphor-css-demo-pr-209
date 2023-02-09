@@ -33,6 +33,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"phosphor-css": "^1.0.2"
+		"phosphor-css": "^2.0.0"
 	}
 }

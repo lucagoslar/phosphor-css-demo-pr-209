@@ -3,12 +3,12 @@
 </script>
 
 <div>
-	<i class="ph train thin" />
-	<i class="ph train light" />
-	<i class="ph train" />
-	<i class="ph train bold" />
-	<i class="ph train fill" />
-	<i class="ph train duotone" />
+	<i class="ph icon train thin" />
+	<i class="ph icon train light" />
+	<i class="ph icon train" />
+	<i class="ph icon train bold" />
+	<i class="ph icon train fill" />
+	<i class="ph icon train duotone" />
 </div>
 
 <svelte:head><meta name="robots" content="noindex" /></svelte:head>
@@ -63,3 +63,30 @@
 	<li><a data-sveltekit-reload href="{base}/duotone/sass">sass</a></li>
 	<li><a data-sveltekit-reload href="{base}/duotone/less">less</a></li>
 </ul>
+
+<style lang="scss">
+	.ph.icon {
+		animation: rainbow 5s linear infinite;
+
+		@keyframes rainbow {
+			0% {
+				background-color: red;
+			}
+			20% {
+				background-color: orange;
+			}
+			40% {
+				background-color: yellow;
+			}
+			60% {
+				background-color: green;
+			}
+			80% {
+				background-color: blue;
+			}
+			100% {
+				background-color: purple;
+			}
+		}
+	}
+</style>
